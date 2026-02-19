@@ -15,7 +15,7 @@ const products = [
 
   // Bangles
   { id:7, name:"Gold Choodi Set", price:1200, desc:"Traditional design, 4 pieces set, gold plated.", category:"bangles", image:"imagees/H100.png" },
-  { id:8, name:"Patli Choodiyan (12 pcs)", price:999, desc:"Lightweight and durable for everyday wear.", category:"bangles", image:"imageesH101.png" },
+  { id:8, name:"Patli Choodiyan (12 pcs)", price:999, desc:"Lightweight and durable for everyday wear.", category:"bangles", image:"imagees/H101.png" },
   { id:9, name:"Bracelet + Choodi Combo", price:850, desc:"Modern kada and bangle set.", category:"bangles", image:"imagees/H108.png" },
 
   // Mangalsutra
@@ -26,7 +26,7 @@ const products = [
   // Earrings / Nacklace
 
   { id:14, name:"Simple Earring", price:499, desc:"Gold plated  daily wear.", category:"Earring", image:"imagees/N502.png" },
-  { id:15, name:"Earrings", price:599, desc:"Studded with small stones.", category:"Earring", image:"imageesN505.png" },
+  { id:15, name:"Earrings", price:599, desc:"Studded with small stones.", category:"Earring", image:"imagees/N505.png" },
   { id:16, name:"Heavy Earrings", price:550, desc:"Festival and wedding design.", category:"Earring", image:"imagees/N507.png" },
   {id:17, name:"beautyfull Earrings", price:699, desc:" Daily use", category:"Earring", image:"imagees/N507.png" },
   ]
