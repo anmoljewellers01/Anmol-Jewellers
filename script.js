@@ -4,31 +4,31 @@
 // Just copy one block and change id, name, price, desc, category, image.
 const products = [
   // Necklace / Haar
-  { id:1, name:"Gold Plated Haar", price:1299, desc:"Long Necklace with pendant, party look.", category:"Necklace", image:"photos/G300.png" },
-  { id:2, name:"Mang Tika Set", price:1599, desc:"Necklace, Earrings and tika set.", category:"Necklace", image:"photos/G301.png", },
-  { id:3, name:"Choker Necklace", price:1349, desc:"Close-fitting design, light and elegant.", category:"Necklace", image:"photos/G302.png" },
+  { id:1, name:"Gold Plated Haar", price:1299, desc:"Long Necklace with pendant, party look.", category:"Necklace", image:"imagees/G300.png" },
+  { id:2, name:"Mang Tika Set", price:1599, desc:"Necklace, Earrings and tika set.", category:"Necklace", image:"imagees/G301.png", },
+  { id:3, name:"Choker Necklace", price:1349, desc:"Close-fitting design, light and elegant.", category:"Necklace", image:"imagees/G302.png" },
 
   // Rani Haar
-  { id:4, name:"Gold Rani Haar with Earring Set", price:1650, desc:"Traditional design, best pieces set, gold plated.", category:"Rani Haar", image:"photos/K401.png" },
-  { id:5, name:"Rani Haar", price:1999, desc:"Lightweight and durable for wedding wear.", category:"Rani Haar", image:"photos/K402.png" },
-  { id:6, name:"Rani Haar  + Earring", price:1800, desc:"Modern Rani Haar and Earing set.", category:"Rani Haar", image:"photos/K403.png" },
+  { id:4, name:"Gold Rani Haar with Earring Set", price:1650, desc:"Traditional design, best pieces set, gold plated.", category:"Rani Haar", image:"imagees/K401.png" },
+  { id:5, name:"Rani Haar", price:1999, desc:"Lightweight and durable for wedding wear.", category:"Rani Haar", image:"imagees/K402.png" },
+  { id:6, name:"Rani Haar  + Earring", price:1800, desc:"Modern Rani Haar and Earing set.", category:"Rani Haar", image:"imagees/K403.png" },
 
   // Bangles
-  { id:7, name:"Gold Choodi Set", price:1200, desc:"Traditional design, 4 pieces set, gold plated.", category:"bangles", image:"photos/H100.png" },
-  { id:8, name:"Patli Choodiyan (12 pcs)", price:999, desc:"Lightweight and durable for everyday wear.", category:"bangles", image:"photos/H101.png" },
-  { id:9, name:"Bracelet + Choodi Combo", price:850, desc:"Modern kada and bangle set.", category:"bangles", image:"photos/H108.png" },
+  { id:7, name:"Gold Choodi Set", price:1200, desc:"Traditional design, 4 pieces set, gold plated.", category:"bangles", image:"imagees/H100.png" },
+  { id:8, name:"Patli Choodiyan (12 pcs)", price:999, desc:"Lightweight and durable for everyday wear.", category:"bangles", image:"imageesH101.png" },
+  { id:9, name:"Bracelet + Choodi Combo", price:850, desc:"Modern kada and bangle set.", category:"bangles", image:"imagees/H108.png" },
 
   // Mangalsutra
-  { id:10, name:"Simple Mangalsutra", price:1299, desc:"Gold plated with black beads, daily wear.", category:"mangalsutra", image:"photos/S200.png" },
-  { id:11, name:"Diamond Mangalsutra", price:1300, desc:"Studded with small stones.", category:"mangalsutra", image:"photos/S201.png" },
-  { id:12, name:"Heavy Mangalsutra", price:1450, desc:"Festival and wedding design.", category:"mangalsutra", image:"photos/S203.png" },
-  {id:13, name:"Heavy Mangalsutra", price:1350, desc:"Festival Daily use", category:"mangalsutra", image:"photos/S204.png" },
+  { id:10, name:"Simple Mangalsutra", price:1299, desc:"Gold plated with black beads, daily wear.", category:"mangalsutra", image:"imagees/S200.png" },
+  { id:11, name:"Diamond Mangalsutra", price:1300, desc:"Studded with small stones.", category:"mangalsutra", image:"imagees/S201.png" },
+  { id:12, name:"Heavy Mangalsutra", price:1450, desc:"Festival and wedding design.", category:"mangalsutra", image:"imagees/S203.png" },
+  {id:13, name:"Heavy Mangalsutra", price:1350, desc:"Festival Daily use", category:"mangalsutra", image:"imagees/S204.png" },
   // Earrings / Nacklace
 
-  { id:14, name:"Simple Earring", price:499, desc:"Gold plated  daily wear.", category:"Earring", image:"photos/N502.png" },
-  { id:15, name:"Earrings", price:599, desc:"Studded with small stones.", category:"Earring", image:"photos/N505.png" },
-  { id:16, name:"Heavy Earrings", price:550, desc:"Festival and wedding design.", category:"Earring", image:"photos/N507.png" },
-  {id:17, name:"beautyfull Earrings", price:699, desc:" Daily use", category:"Earring", image:"photos/N507.png" },
+  { id:14, name:"Simple Earring", price:499, desc:"Gold plated  daily wear.", category:"Earring", image:"imagees/N502.png" },
+  { id:15, name:"Earrings", price:599, desc:"Studded with small stones.", category:"Earring", image:"imageesN505.png" },
+  { id:16, name:"Heavy Earrings", price:550, desc:"Festival and wedding design.", category:"Earring", image:"imagees/N507.png" },
+  {id:17, name:"beautyfull Earrings", price:699, desc:" Daily use", category:"Earring", image:"imagees/N507.png" },
   ]
 
 // ===== CART =====
