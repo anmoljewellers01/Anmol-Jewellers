@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anmol Jewellers – Luxury Gold Plated</title>
+  <!-- SEO -->
+  <meta name="description" content="Anmol Jewellers: exquisite gold plated jewellery – rings, bangles, mangalsutra,Earring, Necklaces. WhatsApp ordering, free shipping, COD.">
+  <meta name="keywords" content="gold plated jewellery, rings, bangles, mangalsutra, haar, Necklace,Earring, Anmol Jewellers">
+  <!-- Bootstrap + icons + fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Floating WhatsApp with tooltip -->
+<div class="floating-wa">
+  <a href="https://wa.me/8006672595?text=Hello%20Anmol%20Jewellers" class="sticky-wa" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+    <span class="tooltip-text">Chat with us</span>
+  </a>
+</div>
+
+<!-- Sticky Navigation (glassmorphism) -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#">Anmol Jewellers</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#" onclick="filterCategory('rings')">Rings</a></li>
+            <li><a class="dropdown-item" href="#" onclick="filterCategory('bangles')">Bangles</a></li>
+            <li><a class="dropdown-item" href="#" onclick="filterCategory('mangalsutra')">Mangalsutra</a></li>
+            <li><a class="dropdown-item" href="#" onclick="filterCategory('Nacklace')">Haar / Necklace</a></li>
+            <li><a class="dropdown-item" href="#" onclick="filterCategory('Earring')">Earring</a></li>
+          </ul>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-2">
+        <div class="search-wrapper">
+          <input type="text" placeholder="Search..." id="searchInput">
+          <i class="bi bi-search" onclick="searchProducts()"></i>
+        </div>
+        <i class="bi bi-bag cart-icon" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas"></i>
+        <a href="https://wa.me/8006672595" target="_blank"><i class="bi bi-whatsapp social-fly"></i></a>
+        <a href="https://www.instagram.com/anmol_jewellers01a/" target="_blank"><i class="bi bi-instagram social-fly"></i></a>
+        <a href="https://www.facebook.com/share/1DkLgUZzwt/" target="_blank"><i class="bi bi-facebook social-fly"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section with Parallax Slider -->
+<section id="home" class="hero">
+  <div class="hero-slider">
+    <div class="slide active" style="background-image: url('photos/B001.png');">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1 class="reveal">Beautifull Necklace</h1>
+        <p class="reveal delay-1">Gold Plated Necklace for every occasion</p>
+        <div class="btn-group reveal delay-2">
+          <a href="#shop" class="btn btn-gold">Shop Now</a>
+          <a href="https://wa.me/8006672595?text=I'm%20interested%20in%20gold%20plated%20rings" class="btn btn-outline-gold">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('photos/G301.png');">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1 class="reveal">Designer Nacklace</h1>
+        <p class="reveal delay-1">Traditional & modern choodi collection</p>
+        <div class="btn-group reveal delay-2">
+          <a href="#shop" class="btn btn-gold">Shop Now</a>
+          <a href="https://wa.me/8006672595?text=I'm%20interested%20in%20bangles" class="btn btn-outline-gold">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('photos/M050.png');">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1 class="reveal">Mangalsutra & Haar</h1>
+        <p class="reveal delay-1">Gold plated mangalsutra and Necklace sets</p>
+        <div class="btn-group reveal delay-2">
+          <a href="#shop" class="btn btn-gold">Shop Now</a>
+          <a href="https://wa.me/8006672595?text=I'm%20interested%20in%20mangalsutra" class="btn btn-outline-gold">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide" style="background-image: url('photos/N502.png');">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1 class="reveal">Ear Rings</h1>
+        <p class="reveal delay-1">Gold plated mangalsutra and Necklace sets</p>
+        <div class="btn-group reveal delay-2">
+          <a href="#shop" class="btn btn-gold">Shop Now</a>
+          <a href="https://wa.me/8006672595?text=I'm%20interested%20in%20mangalsutra" class="btn btn-outline-gold">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide" style="background-image: url('photos/A001.png');">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1 class="reveal">Anmol jewellers 💕</h1>
+        <p class="reveal delay-1"> Anmol Jewellers gold plated Jewellers ❤️ </p>
+        <div class="btn-group reveal delay-2">
+          <a href="#shop" class="btn btn-gold">Shop Now</a>
+          <a href="https://wa.me/8006672595?text=I'm%20interested%20in%20mangalsutra" class="btn btn-outline-gold">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider-controls">
+    <button class="prev"><i class="bi bi-chevron-left"></i></button>
+    <button class="next"><i class="bi bi-chevron-right"></i></button>
+  </div>
+  <div class="star-3d" id="star3d">✦</div>
+</section>
+
+
+<!-- Celebrity Section - Interactive Cards -->
+<section class="celebrity-section">
+  <div class="container">
+    <h2 class="section-title gold-text">Celebrity Spotlight</h2>
+    <p class="section-subtitle">Loved by stars, worn by you</p>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="celebrity-card">
+          <div class="card-inner">
+            <img src="photos/B002.png" alt="Anushka Sharma">
+            <div class="overlay-content">
+              <img src="photos/B008.png" >
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="celebrity-card">
+          <div class="card-inner">
+            <img src="photos/B007.png" alt="Deepika Padukone">
+            <div class="overlay-content">
+            <img src="photos/B005.png" alt="RANI HAAR">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="celebrity-card">
+          <div class="card-inner">
+            <img src="photos/B003.jpg" alt="Ranveer Singh">
+            <div class="overlay-content">
+            <img src="photos/B004.png">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Product Categories with Tilt Cards -->
+<section class="product-section" id="shop">
+  <div class="container">
+    <h2 class="section-title gold-text">Our Exquisite Collections</h2>
+    <p class="section-subtitle">Handcrafted perfection in 24k gold plate</p>
+    
+    <!-- Mangalsutra -->
+    <div class="category-block">
+      <h3 class="category-title"><span>🔸</span> Mangalsutra / मंगलसूत्र</h3>
+      <div class="row g-4" id="mangalsutra-products"></div>
+    </div>
+
+    <!-- Rani Haar -->
+    <div class="category-block">
+      <h3 class="category-title"><span>💍</span> Rani Haar / रानी हार</h3>
+      <div class="row g-4" id="Rani Haar-products"></div>
+    
+    
+    <!-- Bangles -->
+    <div class="category-block">
+      <h3 class="category-title"><span>🔹</span> Bangles / चूड़ियाँ</h3>
+      <div class="row g-4" id="bangles-products"></div>
+    </div>
+    
+   <!-- Earring -->
+    <div class="category-block">
+      <h3 class="category-title"><span></span>Earring / झुमके </h3>
+      <div class="row g-4" id="Earring-products"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Badges with floating effect -->
+<section class="trust-section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-3 col-6">
+        <div class="trust-item">
+          <i class="bi bi-patch-check"></i>
+          <h6>Premium Quality</h6>
+          <p>24k genuine gold plated</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="trust-item">
+          <i class="bi bi-truck"></i>
+          <h6>Free Shipping</h6>
+          <p>Pan India</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="trust-item">
+          <i class="bi bi-shield-shaded"></i>
+          <h6>Long Lasting Polish</h6>
+          <p>Anti-tarnish</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="trust-item">
+          <i class="bi bi-lock"></i>
+          <h6>Secure Payment</h6>
+          <p>COD Available 300 Advanced Payment</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us - parallax -->
+<section class="why-choose">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h2 class="gold-text">GOLD PLATED Jewellers</h2>
+        <p>Wedding Ho Ya Party, Dikhein Sabse Alag.Get a Premium Gold Look In Budget Premium Look At Pocket-Friendly .Price Sone Jaisa Look, Kam Price Mein....</p>
+        <div class="feature-list">
+          <div class="feature"><i class="bi bi-gem gold"></i> 🎀 Wedding & Party Wear Collection</div>
+          <div class="feature"><i class="bi bi-award gold"></i> ✨ Premium Gold Finish /  Polish Warranty</div>
+           <div class="feature"><i class="bi bi-chat-dots gold"></i> 💫 Fade Resistant Polisht</div>
+           <div class="feature"><i class="bi bi-chat-dots gold"></i> 🌟 Skin Friendly Jewellery</div>
+          <div class="feature"><i class="bi bi-chat-dots gold"></i> 24/7 WhatsApp Support</div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="craft-image">
+          <img src="photos/B006.png" alt="Craftsmanship">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Carousel -->
+<section class="testimonials">
+  <div class="container">
+    <h2 class="section-title gold-text">What Our Customers Say</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="testimonial-card">
+            <i class="bi bi-star-fill gold"></i><i class="bi bi-star-fill gold"></i><i class="bi bi-star-fill gold"></i><i class="bi bi-star-fill gold"></i><i class="bi bi-star-fill gold"></i>
+            <p>"अंगूठी बहुत सुंदर है, गोल्ड प्लेटेटिंग शानदार।"</p>
+            <h5>— Priya S.</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card">
+            <i class="bi bi-star-fill gold"></i><i class="bi bi-star-fill gold"></i><i class="bi bi-star-fill gold"></i><i class="bi bi-star-fill gold"></i><i class="bi bi-star-fill gold"></i>
+            <p>"मंगलसूत्र बिल्कुल फोटो जैसा था। डिलीवरी तेज़।"</p>
+            <h5>— Radha K.</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card">
+            <i class="bi bi-star-fill gold"></i><i class="bi bi-star-fill gold"></i><i class="bi bi-star-fill gold"></i><i class="bi bi-star-fill gold"></i><i class="bi bi-star-half gold"></i>
+            <p>"चूड़ियाँ मेरी शादी में बहुत पसंद आईं।"</p>
+            <h5>— Seema R.</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+  <div class="container">
+    <h2 class="section-title gold-text">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">Why choose Anmol Jewellers gold plated?</button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Anmol Jewellers Mein Hum Aapko Premium Gold Plated Jewellery Provide Karte Hain Jo Real Gold Jaisa Elegant Look Deti Hai At An Affordable Price..</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">How do I order?</button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">👉 Order karne ke Liye Aap Hamari Website Par Apna Favourite Product Select Karein Aur Buy Now Button Par Click Karein.
+           Aap Directly WhatsApp Par Bhi Message Karke Apna Order Place Kar Sakte Hain..</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">Is COD available? </button>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Yes, Cash on Delivery is available only 300 Advanced Payment </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer with Contact & Subscribe -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Anmol Jewellers</h5>
+        <p>Sarojini Nagar Lucknow.<br>
+          <i class="bi bi-telephone"></i> <a href="tel:+91 8006672595">+91 8006672595</a><br>
+          <i class="bi bi-envelope"></i> <a href="mailto:hello@anmoljewellers.com">hello@anmoljewellers.com</a>
+        </p>
+      </div>
+      <div class="col-md-2">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Social</h5>
+        <div class="social-links">
+          <a href="https://wa.me/8006672595" target="_blank"><i class="bi bi-whatsapp social-fly"></i></a>
+        <a href="https://www.instagram.com/anmol_jewellers01a/" target="_blank"><i class="bi bi-instagram social-fly"></i></a>
+        <a href="https://www.facebook.com/share/1Am1QeJyQz/" target="_blank"><i class="bi bi-facebook social-fly"></i></a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h5>Subscribe</h5>
+        <p>Get latest collections & offers</p>
+        <div class="subscribe-group">
+          <input type="email" id="subscribeEmail" placeholder="Your email">
+          <button onclick="subscribeNewsletter()">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">© 2025 Anmol Jewellers — Luxury Gold Plated</p>
+  </div>
+</footer>
+
+<!-- Cart Offcanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title gold">Your Cart</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div id="cart-items"></div>
+    <hr>
+    <h5 class="gold">Total: ₹<span id="cart-total">0</span></h5>
+    <button class="btn btn-gold w-100 mt-3" onclick="checkout()">Checkout</button>
+    <div class="mt-4">
+      <h6 class="gold">You may also like</h6>
+      <div id="cart-recommendations" class="row g-2"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Product Quick View Modal -->
+<div class="modal fade" id="productModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title gold" id="modalTitle"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="zoom-container">
+              <img src="" id="modalImage" class="img-fluid zoom-image" alt="Product">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3 id="modalName"></h3>
+            <p id="modalDesc" class="text-muted"></p>
+            <h4 class="gold">₹<span id="modalPrice"></span></h4>
+            <div class="d-grid gap-2 mt-4">
+              <button class="btn btn-gold" id="modalAddToCart">Add to Cart</button>
+              <button class="btn btn-wa" id="modalWhatsApp"><i class="bi bi-whatsapp"></i> Order on WhatsApp</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JavaScript -->
+<script src="script.js"></script>
+<!-- Replace WA number 919999999999 with your own -->
+</body>
+</html>
