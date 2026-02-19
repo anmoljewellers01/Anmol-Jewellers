@@ -168,7 +168,7 @@ function updateCart() {
 function orderNow(id) {
   const prod = products.find(p => p.id === id);
   const msg = `Hello, I'm interested in: ${prod.name} (₹${prod.price}). Please confirm availability.`;
-  window.open(`https://wa.me/8006672595?text=${encodeURIComponent(msg)}`, '_blank');
+  window.open(`https://wa.me/+918006672595?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
 // Checkout
@@ -180,7 +180,7 @@ function checkout() {
   cart.forEach(i => { itemsList += `${i.name} (x${i.qty}) - ₹${i.price*i.qty}\n`; });
   const total = cart.reduce((s,i)=>s+i.price*i.qty,0);
   const msg = `New Order from ${name}\nAddress: ${address}\nItems:\n${itemsList}\nTotal: ₹${total}`;
-  window.open(`https://wa.me/8006672595?text=${encodeURIComponent(msg)}`, '_blank');
+  window.open(`https://wa.me/+918006672595?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
 // Search
