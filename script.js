@@ -28,7 +28,7 @@ const products = [
   { id:14, name:"Simple Earring", price:499, desc:"Gold plated  daily wear.", category:"Earring", image:"imagees/N502.png" },
   { id:15, name:"Earrings", price:599, desc:"Studded with small stones.", category:"Earring", image:"imagees/N505.png" },
   { id:16, name:"Heavy Earrings", price:550, desc:"Festival and wedding design.", category:"Earring", image:"imagees/N507.png" },
-  {id:17, name:"beautyfull Earrings", price:699, desc:" Daily use", category:"Earring", image:"imagees/N507.png" },
+  {id:17, name:"beautyfull Earrings", price:699, desc:" Daily use", category:"Earring", image:"imagees/N508.png" },
   ]
 
 // ===== CART =====
